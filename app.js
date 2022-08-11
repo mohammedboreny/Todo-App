@@ -20,16 +20,15 @@ else {
         }
     }
     car = prompt("Do you have a car?");
-    if (car != "y" || car != "n" || car != "yes" || car != "no") {
-        {
+    if (car != "y" && car != "n" && car != "yes" && car != "no") {
             car = "invalid";
         }
         married = prompt("are you married?");
-        if (married != "y" || married != "n" || married != "yes" || married != "no") {
+        if (married != "y"&& married != "n" && married != "yes" && married != "no") {
             married = "invalid";
         }
         children = prompt("Do you have a children?");
-        if (children != "y" || children != "n" || children != "yes" || children != "no") {
+        if (children != "y" && children != "n" && children != "yes" && children != "no") {
             children = "invalid";
         }
         let listOfAnswers = [];
@@ -42,9 +41,8 @@ else {
         listOfAnswersRev = listOfAnswers.reverse();
         console.log(listOfAnswersRev);
         ratingUser = prompt("rate our website");
-        let x = [];
-        for (i = 1; i <= ratingUser; i++) {
-           
+        var x = [];
+        for (i = 1; i <= ratingUser; i++) {   
             x.push("*");
             if (x.length > 5)
                 break;
@@ -52,4 +50,3 @@ else {
         console.log(x);
         alert("thank you for stars");
     }
-}

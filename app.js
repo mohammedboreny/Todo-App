@@ -42,8 +42,9 @@ else {
         listOfAnswersRev = listOfAnswers.reverse();
         console.log(listOfAnswersRev);
         ratingUser = prompt("rate our website");
+        let x = [];
         for (i = 1; i <= ratingUser; i++) {
-            let x = [];
+           
             x.push("*");
             if (x.length > 5)
                 break;

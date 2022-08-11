@@ -20,35 +20,35 @@ else {
         }
     }
     car = prompt("Do you have a car?");
-    if (car == "y" || car!="n" || car != "yes" || car!="no" ) {
+    if (car != "y" || car != "n" || car != "yes" || car != "no") {
         {
-        car = "invalid";
-    }
-    married = prompt("are you married?");
-    if (married == "y" || married!="n" || married != "yes" || married!="no" ) {
-        married = "invalid";
-    }
-    children = prompt("Do you have a children?");
-    if (children != "y" || children!="n" || children != "yes" || children!="no" ) {
-        children = "invalid";
-    }
-    let listOfAnswers = [];
-    listOfAnswers.push(Name);
-    listOfAnswers.push(gender);
-    listOfAnswers.push(age);
-    listOfAnswers.push(car);
-    listOfAnswers.push(married);
-    listOfAnswers.push(children);
-    listOfAnswersRev = listOfAnswers.reverse();
-    console.log(listOfAnswersRev);
-    ratingUser = prompt("rate our website");
+            car = "invalid";
+        }
+        married = prompt("are you married?");
+        if (married != "y" || married != "n" || married != "yes" || married != "no") {
+            married = "invalid";
+        }
+        children = prompt("Do you have a children?");
+        if (children != "y" || children != "n" || children != "yes" || children != "no") {
+            children = "invalid";
+        }
+        let listOfAnswers = [];
+        listOfAnswers.push(Name);
+        listOfAnswers.push(gender);
+        listOfAnswers.push(age);
+        listOfAnswers.push(car);
+        listOfAnswers.push(married);
+        listOfAnswers.push(children);
+        listOfAnswersRev = listOfAnswers.reverse();
+        console.log(listOfAnswersRev);
+        ratingUser = prompt("rate our website");
         for (i = 1; i <= ratingUser; i++) {
             let x = [];
             x.push("*");
             if (x.length > 5)
                 break;
+        }
+        console.log(x);
+        alert("thank you for stars");
     }
-    alert("thank you for " + x + "stars");
-    }
-    
-
+}

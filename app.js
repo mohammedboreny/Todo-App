@@ -20,15 +20,16 @@ else {
         }
     }
     car = prompt("Do you have a car?");
-    if (car ==null) {
+    if (car == "y" || car!="n" || car != "yes" || car!="no" ) {
+        {
         car = "invalid";
     }
     married = prompt("are you married?");
-    if (married ==null) {
+    if (married == "y" || married!="n" || married != "yes" || married!="no" ) {
         married = "invalid";
     }
     children = prompt("Do you have a children?");
-    if (children ==null) {
+    if (children != "y" || children!="n" || children != "yes" || children!="no" ) {
         children = "invalid";
     }
     let listOfAnswers = [];
@@ -41,11 +42,11 @@ else {
     listOfAnswersRev = listOfAnswers.reverse();
     console.log(listOfAnswersRev);
     ratingUser = prompt("rate our website");
-    for (i = 1; i <= ratingUser; i++){
-        let x = '';
-        x += "*";
-        if (x.length >= 4)
-            x = "*****";
+        for (i = 1; i <= ratingUser; i++) {
+            let x = [];
+            x.push("*");
+            if (x.length > 5)
+                break;
     }
     alert("thank you for " + x + "stars");
     }

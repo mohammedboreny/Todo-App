@@ -40,13 +40,15 @@ else {
         listOfAnswers.push(children);
         listOfAnswersRev = listOfAnswers.reverse();
         console.log(listOfAnswersRev);
-        ratingUser = prompt("rate our website");
+    ratingUser = prompt("rate our website");
         var x = [];
         for (i = 1; i <= ratingUser; i++) {   
             x.push("*");
             if (x.length > 5)
                 break;
         }
-        console.log(x);
-        alert("thank you for stars");
+    console.log(x);
+   let outPutX =x.toString();
+    z= outPutX.replaceAll(","," ");
+        alert("thank you for stars"+ z );
     }

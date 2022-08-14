@@ -48,5 +48,5 @@ else {
                 break;
         }
     console.log(x);
-        alert("thank you for stars"+ x );
+        alert("thank you for stars"+ x.join("") );
     }

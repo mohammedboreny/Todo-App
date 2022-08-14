@@ -48,7 +48,5 @@ else {
                 break;
         }
     console.log(x);
-   let outPutX =x.toString();
-    z= outPutX.replaceall(","," ");
-        alert("thank you for stars"+ z );
+        alert("thank you for stars"+ x );
     }
